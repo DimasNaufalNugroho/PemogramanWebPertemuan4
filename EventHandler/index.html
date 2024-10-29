@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">jam berapa sekarang</button>
+    <p id="demo">Demo</p>
+
+    <button onclick="this.innerHTML=Date()">jam berapa sekarang</button>
+    <select id="hobi" onchange="myFunctionHobi()">
+        <option value="HobiLari">Lari</option>
+        <option value="HobiRenang">Berenang</option>  
+    </select>
+    <p id="TextHobi">Hasil Hobi</p>
+
+</body>
+<script language="javascript">
+        var hobi = prompt("hobi anda apa ?");
+        document.getElementById("texthobi").innerHTML = " Hobi anda adalah " + hobi;
+
+</script>
+</html>
